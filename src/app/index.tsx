@@ -2,9 +2,10 @@ import { ScrollView, View } from "react-native";
 import { Header } from "../components/header";
 import { Banner } from "../components/banner";
 import { Search } from "../components/search";
+import { Section } from "../components/section";
+import { TrendingFoods } from "../components/trending";
 
 import Constants from "expo-constants";
-import { Section } from "../components/section";
 const statusBarHeight = Constants.statusBarHeight + 10;
 
 export default function Index() {
@@ -25,6 +26,8 @@ export default function Index() {
         name="Comidas em alta"
         size="text-lg"
       ></Section>
+
+      <TrendingFoods />
     </ScrollView>
   );
 }
